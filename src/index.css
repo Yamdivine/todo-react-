@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .todo-card {
+    @apply bg-navy p-4 rounded-lg mb-2;
+  }
+
+  .input {
+    @apply w-full bg-light-navy text-white rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-accent;
+  }
+
+  .btn {
+    @apply px-4 py-2 rounded-md transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-blue-accent hover:bg-blue-600 text-white;
+  }
+
+  .filter-tab {
+    @apply px-3 py-1 rounded-md transition-colors duration-200;
+  }
+
+  .filter-tab.active {
+    @apply bg-blue-accent text-white;
+  }
+
+  .filter-tab.inactive {
+    @apply bg-light-navy text-gray-400 hover:text-white;
+  }
+}
